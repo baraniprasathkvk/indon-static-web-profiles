@@ -1,6 +1,6 @@
 {
-    "firstname":"Bill",
-    "lastname":"Gates",
+    "name":"Bill Gates",
+    "image":"billgates.jpg",
     "portfolio-link":"https://twitter.com/BillGates?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "about-me":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra aliquet lacus, eget venenatis diam pellentesque at. Praesent fringilla risus ut nisl ultricies, id rutrum massa mollis. Nulla facilisi. Suspendisse ut dui varius, elementum orci id, feugiat augue. Sed neque lectus, pellentesque sit amet tincidunt in, efficitur sed purus. Nulla facilisi. Nulla a libero auctor, consequat odio ut, vehicula justo.",
     "work":"Founder of Microsoft",
