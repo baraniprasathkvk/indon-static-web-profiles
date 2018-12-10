@@ -16,7 +16,7 @@
 	
 	<script>
 		
- function loadJSON(callback) {   
+ $(document).ready(function loadJSON(callback) {   
 
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
@@ -28,15 +28,15 @@
           }
     };
     xobj.send(null);  
- }
+ });
 
- function init() {
+ $(document).ready(function init() {
  loadJSON(function(response) {
   // Parse JSON string into object
     var actual_JSON = JSON.parse(response);
  });
-}
- 
+});
+
 documet.getElementById("name").innerHTML = obj.name[0];
 </script>
 
