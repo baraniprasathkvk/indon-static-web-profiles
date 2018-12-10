@@ -14,21 +14,21 @@
 	<title>Indon Profile</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
-	<script>
-		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function() {
-		  if (this.readyState == 4 && this.status == 200) {
-		    var myArr = JSON.parse(this.responseText);
-		    document.getElementById("name").innerHTML = myArr[0];
-		  }
-		};
-		xmlhttp.open("GET", "data.txt", true);
-		xmlhttp.send();
-	</script>
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj.name;
+  }
+};
+xmlhttp.open("GET", "data.txt", true);
+xmlhttp.send();
+</script>
 </head>
 <body>
 	<img class="iwp-profile-picutre" src="billgates.jpg">
-	<h1 class="iwp-profile-name" id="name">Bill Gates</h1>
+	<h1 class="iwp-profile-name" id="demo">Bill Gates</h1>
 <!-- 	<br>			
 	<i class="fas fa-map-marker-alt"></i>
 	<p class="iwp-residing-town">Seattle, WA</p> -->		
