@@ -2,36 +2,123 @@
 <html>
 <head>
 
-	<!-- CSS -->
-	<!-- Default CSS -->
-	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:400">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:500">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
 
-	<title>Indon Profile</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+	<style type="text/css">
+
+		body {
+			margin: 0px;
+		}
+
+		.iwp-profile-image {
+			display: inline-block;
+			position: fixed;
+			width: 70%;
+		}
+
+		.iwp-profile-content {
+			display: initial;
+			position: static;
+			float: right;
+			width: 30%;
+			background-color: #fefefe;	
+		}
+
+		.iwp-profile-content-header {
+			margin: 30px 50px 0px 50px;
+			letter-spacing: 1.6px;
+			font-family: Roboto; 
+			font-weight: 300; 
+			font-size: 14px;
+		}
+		
+		.iwp-profile-content-description {
+			margin: 20px 50px 0px 50px; 
+			line-height: 1.6; 
+			font-family: Lato; 
+			font-weight: 400; 
+			font-size: 17px;
+		}
+
+		ul{
+			list-style: none;
+		}
+
+		li{
+			display: inline;
+		}
+
+	</style>
+
+	<title>design-left</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.name;
+    document.getElementById("name").innerHTML = myObj.name;
+    document.getElementById("image").src = myObj.image;
+    document.getElementById("portfoliolink").href = myObj.portfoliolink;
+    document.getElementById("aboutme").innerHTML = myObj.aboutme;
+    document.getElementById("work").innerHTML = myObj.work;
+    document.getElementById("education").innerHTML = myObj.education;
   }
 };
 xmlhttp.open("GET", "data.txt", true);
 xmlhttp.send();
 </script>
 </head>
-<body>
-	<img class="iwp-profile-picutre" src="billgates.jpg">
-	<h1 class="iwp-profile-name" id="demo">Bill Gates</h1>
-<!-- 	<br>			
-	<i class="fas fa-map-marker-alt"></i>
-	<p class="iwp-residing-town">Seattle, WA</p> -->		
 
+<body>
+
+<div class="iwp-profile">
+	<img id="image" class="iwp-profile-image" src="img/image-placeholder.jpg">	
+
+	<div class="iwp-profile-content">
+
+		<h1 id="name" style= "padding: 50px 50px 0px 50px; letter-spacing: 1.5px; line-height:1; text-transform: uppercase;  font-family: Hind;font-weight: 500; font-size: 25px;">
+		FirstName LastName</h1>
+		
+		<p style= "padding: 0px 50px 0px 50px; letter-spacing: 1.5px; text-transform: uppercase; font-family: Hind; font-weight: 500; font-size: 18px;">Location, Town</p>
+		
+		<a id="portfoliolink" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 20px; padding: 8px; width: 75%; /*height: 50px;*/ background-color:#33CCFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Hind; font-weight: 400; font-size: 15px; color: white;" href="#" target="_blank" type="button"><i class="fab fa-twitter"></i> Visit my Twitter</a>
+
+		<p id="aboutme" class="iwp-profile-content-description"></p>
+
+		<h3 class="iwp-profile-content-header" style="">WORK</h3>
+
+		<p id="work" class="iwp-profile-content-description">Lorem ipsum</p>
+
+		<h3 class="iwp-profile-content-header">EDUCATION</h3>
+
+		<p  id=""education class="iwp-profile-content-description">Lorem ipsum dolor</p>
+	
+
+		<ul>
+		<li ><a href="#" target="_blank" title="Visit me on Instagram"><i class="fab fa-behance-square" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li><a href="#" target="_blank" title="Visit me on Facebook"><i class="fab fa-facebook" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Instagram"><i class="fab fa-imdb" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>		
+		<li ><a href="#" target="_blank" title="Visit me on Instagram"><i class="fab fa-instagram" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Flickr"><i class="fab fa-flickr" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Linked In"><i class="fab fa-linkedin" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Tumblr"><i class="fab fa-tumblr-square" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Twitter"><i class="fab fa-twitter-square" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+		<li ><a href="#" target="_blank" title="Visit me on Wikipeida"><i class="fab fa-wikipedia-w" style="margin: 20px 25px 0px 0px; font-size: 40px; color: #a3a3a3; "></i></a></li>
+
+		</ul>
+
+	</div>
+</div>
 </body>
 </html>
