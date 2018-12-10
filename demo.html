@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- CSS -->
+	<!-- Default CSS -->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:400">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:500">
+
+	<title>Indon Profile</title>
+</head>
+<body>
+	<img class="iwp-profile-picutre" src="img/billgates.jpg">
+	<h1 class="iwp-profile-name" id="name">Bill Gates</h1>
+<!-- 	<br>			
+	<i class="fas fa-map-marker-alt"></i>
+	<p class="iwp-residing-town">Seattle, WA</p> -->		
+
+<script>
+ function loadJSON(callback) {   
+
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'data.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+
+ function init() {
+ loadJSON(function(response) {
+  // Parse JSON string into object
+    var actual_JSON = JSON.parse(response);
+ });
+}
+ 
+documet.getElementById("name").innerHTML = obj.name[0];
+</script>
+
+
+</body>
+</html>
