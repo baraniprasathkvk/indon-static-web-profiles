@@ -42,26 +42,56 @@
 	    document.getElementById("aboutme").innerHTML = myObj.aboutme;
 	    document.getElementById("work").innerHTML = myObj.work;
 	    document.getElementById("education").innerHTML = myObj.education;
+	    if (myObj.profilewebsite == ""){	  
+	    	document.getElementById("profilewebsite").style.display = "none";
+	    } else {
+		 document.getElementById("profilewebsite").innerHTML = myObj.profilewebsite;
+	    }
 	    if (myObj.profilebehance == ""){
 	    	document.getElementById("profilebehance").style.display = "none";
 	    } else {
 		document.getElementById("profilebehance").innerHTML = myObj.profilebehance;
 	    }
-	    document.getElementById("profilefb").style.display = "none";
-	    //document.getElementById("profileimddb").href = myObj.profileimdb;
-	    document.getElementById("profileimdb").style.display = "none";
-	    //document.getElementById("profileinsta").href = myObj.profileinsta;
-	    document.getElementById("profileinsta").style.display = "none";
-	    //document.getElementById("profileflickr").href = myObj.profileflickr;
-	    document.getElementById("profileflickr").style.display = "none";
-	    //document.getElementById("profilelinkedin").href = myObj.profilelinkedin;
-	    document.getElementById("profilelinkedin").style.display = "none";
-	    //document.getElementById("profiletumblr").href = myObj.profiletubmlr;
-            document.getElementById("profiletumblr").style.display = "none";
-	    //document.getElementById("profiletwitter").href = myObj.profiletwitter;
-	    document.getElementById("profiletwitter").style.display = "none";
-	    //document.getElementById("profilewiki").href = myObj.profilewiki;	    
-	    document.getElementById("profilewiki").style.display = "none";
+	    if (myObj.profilefb == ""){				  
+	    	document.getElementById("profilefb").style.display = "none";
+	    } else {
+		document.getElementById("profilefb").innerHTML = myObj.profilefb;
+	    }
+	    if (myObj.profileimdb == ""){
+		document.getElementById("profileimdb").style.display = "none";
+	    } else {
+		document.getElementById("profileimdb").innerHTML = myObj.profileimdb;
+	    }
+	    if (myObj.profileinsta == ""){
+		document.getElementById("profileinsta").style.display = "none";
+	    } else {
+		document.getElementById("profileinsta").innerHTML = myObj.profileinsta;
+	    }
+	    if (myObj.profileflickr == ""){
+		document.getElementById("profileflickr").style.display = "none";
+	    } else {
+		document.getElementById("profileflickr").innerHTML = myObj.profileflickr;
+	    }
+	    if (myObj.profilelinkedin == ""){
+		document.getElementById("profilelinkedin").style.display = "none";
+	    } else {
+		document.getElementById("profilelinkedin").innerHTML = myObj.profilelinkedin;
+	    }
+            if (myObj.profiletumblr == ""){
+		document.getElementById("profiletumblr").style.display = "none";
+	    } else {
+		document.getElementById("profiletumblr").innerHTML = myObj.profiletumblr;
+	    }
+	    if (myObj.profiletwitter == ""){
+		document.getElementById("profiletwitter").style.display = "none";
+	    } else {
+		document.getElementById("profiletwitter").innerHTML = myObj.profiletwitter;
+	    }
+	    if (myObj.profilewiki == ""){
+		document.getElementById("profilewiki").style.display = "none";
+	    } else {
+		document.getElementById("profilewiki").innerHTML = myObj.profilewiki;
+	    }
 	  }
 	};
 	xmlhttp.open("GET", "data.txt", true);
@@ -84,9 +114,9 @@
 	<div class="iwp-profile-content">
 		<h3 class="iwp-profile-content-header">ABOUT ME</h3>
 
-		<p  id="aboutme" class="iwp-profile-content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra aliquet lacus, eget venenatis diam pellentesque at. Praesent fringilla risus ut nisl ultricies, id rutrum massa mollis. Nulla facilisi. Suspendisse ut dui varius, elementum orci id, feugiat augue. Sed neque lectus, pellentesque sit amet tincidunt in, efficitur sed purus. Nulla facilisi. Nulla a libero auctor, consequat odio ut, vehicula justo.</p>
+		<p  id="aboutme" class="iwp-profile-content-description"></p>
 
-		<p class="iwp-profile-content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra aliquet lacus, eget venenatis diam pellentesque at. Praesent fringilla risus ut nisl ultricies, id rutrum massa mollis. Nulla facilisi.</p>
+		<p class="iwp-profile-content-description"></p>
 		
 		<h3 class="iwp-profile-content-header" style="">WORK</h3>
 
@@ -99,6 +129,7 @@
 		<h3 class="iwp-profile-content-header">MY ONLINE PRESENCE</h3>
 
 		<ul>
+		<li><a id="profilewebsite" href="#" target="_blank" title="Visit my Website"><i class="fas fa-globe"></i></a></li>	
 		<li><a id="profilebehance" href="#" target="_blank" title="Visit me on Instagram"><i class="fab fa-behance-square"></i></a></li>
 		<li><a id="profilefb" href="#" target="_blank" title="Visit me on Facebook"><i class="fab fa-facebook"></i></a></li>
 		<li><a id="profileimdb" href="#" target="_blank" title="Visit me on Instagram"><i class="fab fa-imdb"></i></a></li>		
