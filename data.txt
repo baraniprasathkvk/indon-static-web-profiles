@@ -14,5 +14,5 @@
     "profilelinkedin":"",
     "profiletumblr":"",
     "profilertwitter":"",
-    "profilewiki":"",
+    "profilewiki":""
 }
