@@ -6,7 +6,7 @@
     "aboutme":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra aliquet lacus, eget venenatis diam pellentesque at. Praesent fringilla risus ut nisl ultricies, id rutrum massa mollis. Nulla facilisi. Suspendisse ut dui varius, elementum orci id, feugiat augue. Sed neque lectus, pellentesque sit amet tincidunt in, efficitur sed purus. Nulla facilisi. Nulla a libero auctor, consequat odio ut, vehicula justo.",
     "work":"Founder of Microsoft",
     "education":"Harvard",
-    "profilebehance":,
+    "profilebehance":"",
     "profilefb":"",
     "profileimdb":"",
     "profileinsta":"",
