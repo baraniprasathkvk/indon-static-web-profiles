@@ -48,13 +48,20 @@
 		documet.getElementById("profilebehance").innerHTML = myObj.profilebehance;
 	    }
 	    document.getElementById("profilefb").style.display = "none";
-	    document.getElementById("profileimddb").href = myObj.profileimdb;
-	    document.getElementById("profileinsta").href = myObj.profileinsta;
-	    document.getElementById("profileflickr").href = myObj.profileflickr;
-	    document.getElementById("profilelinkedin").href = myObj.profilelinkedin;
-	    document.getElementById("profiletumblr").href = myObj.profiletubmlr;
-	    document.getElementById("profiletwitter").href = myObj.profiletwitter;
-	    document.getElementById("profilewiki").href = myObj.profilewiki;	    
+	    //document.getElementById("profileimddb").href = myObj.profileimdb;
+	    document.getElementById("profileimdb").style.display = "none";
+	    //document.getElementById("profileinsta").href = myObj.profileinsta;
+	    document.getElementById("profileinsta").style.display = "none";
+	    //document.getElementById("profileflickr").href = myObj.profileflickr;
+	    document.getElementById("profileflickr").style.display = "none";
+	    //document.getElementById("profilelinkedin").href = myObj.profilelinkedin;
+	    document.getElementById("profilelinkedin").style.display = "none";
+	    //document.getElementById("profiletumblr").href = myObj.profiletubmlr;
+            document.getElementById("profiletumblr").style.display = "none";
+	    //document.getElementById("profiletwitter").href = myObj.profiletwitter;
+	    document.getElementById("profiletwitter").style.display = "none";
+	    //document.getElementById("profilewiki").href = myObj.profilewiki;	    
+	    document.getElementById("profilewiki").style.display = "none";
 	  }
 	};
 	xmlhttp.open("GET", "data.txt", true);
