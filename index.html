@@ -42,7 +42,11 @@
 	    document.getElementById("aboutme").innerHTML = myObj.aboutme;
 	    document.getElementById("work").innerHTML = myObj.work;
 	    document.getElementById("education").innerHTML = myObj.education;
-	    document.getElementById("profilebehance").style.display = none;
+	    if (myObj.profilebehance == ""){
+	    	document.getElementById("profilebehance").style.display = "none";
+	    } else {
+		documet.getElementById("profilebehance").innerHTML = myObj.profilebehance;
+	    }
 	    document.getElementById("profilefb").href = myObj.profilefb;
 	    document.getElementById("profileimddb").href = myObj.profileimdb;
 	    document.getElementById("profileinsta").href = myObj.profileinsta;
